@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>About Me: <span>Tell your story here!</span></p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#activity-feed">Activity</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Project One</li>
+        <li>Project Two</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="activity-feed">
+      <h2>Activity Feed</h2>
+      <div id="activity-feed-list"></div>
+    </section>
+
+    <section id="post-activity">
+      <h2>Post an Activity</h2>
+      <!-- Replace action URL with your Formspree link -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="title" placeholder="Post Title" required>
+        <textarea name="content" placeholder="Write your activity..." required></textarea>
+        <input type="date" name="date" required>
+        <button type="submit">Submit Activity</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: youremail@example.com</p>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
